@@ -1,6 +1,6 @@
 <template>
   <main>
-    <px-header :links="links"  />
+    <px-header :links="links" />
     <router-view class="container px-5 sm:px-20 py-20 flex justify-center" />
   </main>
 </template>
@@ -11,23 +11,23 @@ import PxHeader from "@/components/PxHeader";
 export default {
   name: "App",
   components: { PxHeader },
-  data(){
+  data() {
     return {
       links: [
         {
-          title: 'BTC',
-          to: { name: 'coin-detail', params: { id: 'bitcoin' } }
+          title: "BTC",
+          to: { name: "coin-detail", params: { id: "bitcoin" } }
         },
         {
-          title: 'ETH',
-          to: { name: 'coin-detail', params: { id: 'ethereum' } }
+          title: "ETH",
+          to: { name: "coin-detail", params: { id: "ethereum" } }
         },
         {
-          title: 'XRP',
-          to: { name: 'coin-detail', params: { id: 'ripple' } }
+          title: "XRP",
+          to: { name: "coin-detail", params: { id: "ripple" } }
         }
       ]
-    }
+    };
   }
 };
 </script>

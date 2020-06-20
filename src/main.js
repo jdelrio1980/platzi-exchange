@@ -10,16 +10,14 @@ Vue.filter("dollar", dollarFilter);
 Vue.filter("percent", percentFilter);
 Vue.config.productionTip = false;
 
-import Chartkick from 'vue-chartkick'
-import Chart from 'chart.js'
-import { VueSpinners } from '@saeris/vue-spinners';
+import Chartkick from "vue-chartkick";
+import Chart from "chart.js";
+import { VueSpinners } from "@saeris/vue-spinners";
 
-Vue.use(VueSpinners)
-Vue.use(Chartkick.use(Chart))
-
-
+Vue.use(VueSpinners);
+Vue.use(Chartkick.use(Chart));
 
 new Vue({
-    router,
-    render: h => h(App)
+  router,
+  render: h => h(App)
 }).$mount("#app");
